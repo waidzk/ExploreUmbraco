@@ -1,0 +1,9 @@
+﻿@model IEnumerable<ExploreUmbraco.Models.Customer>
+
+<h2>Customer List</h2>
+<ul>
+    @foreach (var customer in Model)
+    {
+        <li>@customer.CompanyName (@customer.ContactName)</li>
+    }
+</ul>
